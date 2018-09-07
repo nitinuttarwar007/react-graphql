@@ -37,12 +37,16 @@ const Courses = () => (
         if(loading) return (
           <Skeleton loading={loading} active avatar />        
         )
+
+        if(error) return (<p>Error :(</p>);
         
         return (
           <div>
             <List
               itemLayout="vertical"
+              bordered="true"
               size="large"
+              header={<div style={{ textAlign:'center', fontSize:'24px'}}>Available Courses</div>}
               dataSource={listData}
               renderItem={item => (
                 <List.Item

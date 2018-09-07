@@ -1,2 +1,13 @@
+.layoutHeader {
+    text-align: center; 
+    background: #7dbcea !important;
+    font-size: 24px;
+}
 
+.layoutContent {
+    padding: 50px 50px 0px 50px
+}
 
+.layoutDiv {
+    background: #fff;
+}
